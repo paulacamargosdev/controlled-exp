@@ -1,0 +1,13 @@
+# Dependências do Experimento GraphQL vs REST
+# Laboratório 05 - Experimentação de Software
+
+# Cliente HTTP para requisições REST e GraphQL
+requests>=2.31.0
+
+# Análise e manipulação de dados (para Sprint 2)
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Utilitários
+python-dotenv>=1.0.0
+

@@ -1,0 +1,2402 @@
+[
+  {
+    "timestamp": "2025-11-30T20:35:09.950891",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 532.4138999999377,
+    "response_size_bytes": 2,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:11.605439",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 654.1247999998632,
+    "response_size_bytes": 2290,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:12.898515",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 292.59810000030484,
+    "response_size_bytes": 46555,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:14.294119",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 395.18320000024687,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:15.624514",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 329.8276000000442,
+    "response_size_bytes": 37501,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:17.227718",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 602.5102000003244,
+    "response_size_bytes": 2824,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:18.571278",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 342.88340000011885,
+    "response_size_bytes": 51145,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:20.053468",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 481.62390000015876,
+    "response_size_bytes": 3027,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:21.391570",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 337.3193000002175,
+    "response_size_bytes": 51682,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:22.872505",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 480.52059999963603,
+    "response_size_bytes": 2824,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:24.074983",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 201.7018999999891,
+    "response_size_bytes": 2,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:25.494536",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 419.25069999979314,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:26.700796",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 205.81739999988713,
+    "response_size_bytes": 2,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:28.131290",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 429.82089999986783,
+    "response_size_bytes": 2290,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:29.328602",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 196.99930000024324,
+    "response_size_bytes": 2,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:30.911557",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 582.4832999996943,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:32.189669",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 277.06579999994574,
+    "response_size_bytes": 49353,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:33.622119",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 432.1193000000676,
+    "response_size_bytes": 2796,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:34.891669",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 268.5958000001847,
+    "response_size_bytes": 51682,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:36.406677",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 514.3542000000707,
+    "response_size_bytes": 2824,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:37.732264",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 324.9313000001166,
+    "response_size_bytes": 51682,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:39.339092",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 606.2375999999858,
+    "response_size_bytes": 2824,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:40.654503",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 314.6761000002698,
+    "response_size_bytes": 50771,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:42.305037",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 650.0123000000713,
+    "response_size_bytes": 2796,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:43.530294",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 224.89059999998062,
+    "response_size_bytes": 2,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:45.052016",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 520.9265000003143,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:46.349539",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 296.6948000002958,
+    "response_size_bytes": 46555,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:47.789784",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 439.8964000001797,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:49.083569",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 292.8263000003426,
+    "response_size_bytes": 51226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:50.552465",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 468.2708000000275,
+    "response_size_bytes": 3027,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:51.898916",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 345.4647999997178,
+    "response_size_bytes": 37501,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:53.481324",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 581.8020000001525,
+    "response_size_bytes": 2824,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:54.792439",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 310.54420000009486,
+    "response_size_bytes": 46555,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:56.189365",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 396.299099999851,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:57.474473",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 284.2539999996916,
+    "response_size_bytes": 51145,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:35:58.906619",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 431.4366999997219,
+    "response_size_bytes": 3027,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:00.250278",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 342.8063999999722,
+    "response_size_bytes": 48977,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:01.733161",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 482.53380000005563,
+    "response_size_bytes": 3027,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:02.932990",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 199.01980000031472,
+    "response_size_bytes": 2,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:04.291308",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 357.77509999979884,
+    "response_size_bytes": 2290,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:05.584937",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 292.9535000002943,
+    "response_size_bytes": 46555,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:07.045774",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 460.20640000006097,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:08.330575",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 283.66289999985383,
+    "response_size_bytes": 49353,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:10.195060",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 864.1371000003346,
+    "response_size_bytes": 2796,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:11.538077",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 341.8781000000308,
+    "response_size_bytes": 49353,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:12.996857",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 458.1943000002866,
+    "response_size_bytes": 2796,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:14.232321",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 234.95199999979377,
+    "response_size_bytes": 2,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:15.660994",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 428.3237999998164,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:16.861021",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 199.27310000002763,
+    "response_size_bytes": 2,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:18.301144",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 439.44250000004104,
+    "response_size_bytes": 2907,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:19.599715",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 297.4431999996341,
+    "response_size_bytes": 50599,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:21.150664",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 550.4171999996288,
+    "response_size_bytes": 2796,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:22.438277",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 286.858200000097,
+    "response_size_bytes": 37501,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:23.910209",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 471.1772000000565,
+    "response_size_bytes": 2824,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:25.213818",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 302.8263999999581,
+    "response_size_bytes": 48977,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:26.630722",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 416.54049999988274,
+    "response_size_bytes": 3027,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:27.889618",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 258.3201000002191,
+    "response_size_bytes": 40222,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:29.320233",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 429.7695999998723,
+    "response_size_bytes": 2290,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:30.598922",
+    "api_type": "REST",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 277.90360000017245,
+    "response_size_bytes": 51145,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:32.035253",
+    "api_type": "GraphQL",
+    "query_type": "paginacao",
+    "query_name": "get_repos_paginated",
+    "response_time_ms": 435.48210000017207,
+    "response_size_bytes": 3027,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:33.770430",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 733.9333999998416,
+    "response_size_bytes": 57258,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:35.671509",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 900.2239999999802,
+    "response_size_bytes": 4396,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:37.302001",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 629.6667999999954,
+    "response_size_bytes": 53843,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:39.027313",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 724.9062999999296,
+    "response_size_bytes": 3226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:40.668156",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 640.2195000000575,
+    "response_size_bytes": 51652,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:42.316174",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 647.4106999999094,
+    "response_size_bytes": 3353,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:43.964347",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 647.5780999999188,
+    "response_size_bytes": 53843,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:45.676487",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 711.2921000002643,
+    "response_size_bytes": 3226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:47.252797",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 575.16140000007,
+    "response_size_bytes": 53843,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:48.906491",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 653.0668999998852,
+    "response_size_bytes": 3226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:50.651216",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 743.5897999998815,
+    "response_size_bytes": 53843,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:52.392480",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 740.6605000001036,
+    "response_size_bytes": 3226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:54.062056",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 668.8417999998819,
+    "response_size_bytes": 57258,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:55.960848",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 897.8523000000678,
+    "response_size_bytes": 4396,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:57.781348",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 819.3774000001213,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:36:59.491466",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 709.768300000178,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:01.141186",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 648.9172999999937,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:02.895154",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 753.6215999998603,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:04.672781",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 776.4580000002752,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:06.460452",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 787.2434000000794,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:09.485046",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 2023.7037000001692,
+    "response_size_bytes": 58013,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:11.298182",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 812.6063999998223,
+    "response_size_bytes": 3634,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:12.957404",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 658.3338999998887,
+    "response_size_bytes": 53843,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:14.572201",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 614.4356999998308,
+    "response_size_bytes": 3226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:16.250202",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 677.2986000000856,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:17.984113",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 733.0321999997977,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:19.663859",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 679.0251000002172,
+    "response_size_bytes": 58013,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:21.335373",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 671.1561000001893,
+    "response_size_bytes": 3634,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:23.119810",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 783.7380999999368,
+    "response_size_bytes": 57258,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:24.834893",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 714.5067000001291,
+    "response_size_bytes": 4396,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:26.605057",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 769.4541000000754,
+    "response_size_bytes": 58013,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:28.371656",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 765.8973000002334,
+    "response_size_bytes": 3634,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:30.039617",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 667.0528999998169,
+    "response_size_bytes": 58013,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:31.687971",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 646.9614999996338,
+    "response_size_bytes": 3634,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:33.363400",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 674.3148999998994,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:35.169745",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 805.3007999997135,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:36.911636",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 741.0166999998182,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:38.628466",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 716.1977000000661,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:40.232221",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 602.8197999999065,
+    "response_size_bytes": 57258,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:41.902670",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 670.0553000000582,
+    "response_size_bytes": 4396,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:43.499329",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 595.3631999996105,
+    "response_size_bytes": 57258,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:45.310425",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 810.4585999999472,
+    "response_size_bytes": 4396,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:47.041842",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 730.7888000000275,
+    "response_size_bytes": 53843,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:48.783133",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 740.8117999998467,
+    "response_size_bytes": 3226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:50.426826",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 642.925699999978,
+    "response_size_bytes": 58013,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:52.256088",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 828.4964000004038,
+    "response_size_bytes": 3634,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:54.080734",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 823.7288000000262,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:55.829826",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 748.3409999999822,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:57.474661",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 643.8630000002377,
+    "response_size_bytes": 58013,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:37:59.206007",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 730.9728000000177,
+    "response_size_bytes": 3634,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:00.990570",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 783.4514999999556,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:02.857623",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 866.3243999999395,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:04.399166",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 540.9104999998817,
+    "response_size_bytes": 57258,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:06.717977",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 1318.177900000137,
+    "response_size_bytes": 4396,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:08.331587",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 612.7512000002753,
+    "response_size_bytes": 55639,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:10.269848",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 937.652000000071,
+    "response_size_bytes": 3524,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:11.917497",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 646.3394000002154,
+    "response_size_bytes": 53843,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:13.681183",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 763.2792999997946,
+    "response_size_bytes": 3226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:15.302412",
+    "api_type": "REST",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 620.5488000000514,
+    "response_size_bytes": 53843,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:16.910069",
+    "api_type": "GraphQL",
+    "query_type": "filtros",
+    "query_name": "search_repositories",
+    "response_time_ms": 606.6430999999284,
+    "response_size_bytes": 3226,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:18.119610",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 208.64209999990635,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:19.371917",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 251.81019999990895,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:20.829722",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 457.0275999999467,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:22.077954",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 247.4661000001106,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:23.278638",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 199.68569999991814,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:24.577919",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 298.56370000015886,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:25.783979",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 205.6971999995767,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:27.046458",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 261.65009999976974,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:28.633804",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 586.6956999998365,
+    "response_size_bytes": 1201,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:29.897158",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 262.9348000000391,
+    "response_size_bytes": 419,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:31.095241",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 197.4462999996831,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:32.563174",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 467.5080000001799,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:33.773500",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 210.01810000007026,
+    "response_size_bytes": 1188,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:35.044473",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 270.40219999980764,
+    "response_size_bytes": 395,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:36.273612",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 228.43999999986409,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:37.524957",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 250.8906000002753,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:38.738182",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 212.65330000005633,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:39.998668",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 259.8951999998462,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:41.199246",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 199.86029999972743,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:42.524948",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 325.0041000001147,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:43.780065",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 254.43739999991521,
+    "response_size_bytes": 1188,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:45.027158",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 246.58679999993183,
+    "response_size_bytes": 395,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:46.223758",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 195.97410000005766,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:47.504471",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 280.03939999962313,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:48.715906",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 211.03439999978946,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:49.962449",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 246.1276999997608,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:51.166290",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 203.50710000002437,
+    "response_size_bytes": 1287,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:52.430142",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 263.3646999997836,
+    "response_size_bytes": 449,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:53.639257",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 208.7231000000429,
+    "response_size_bytes": 1287,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:54.911504",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 271.8746000000465,
+    "response_size_bytes": 449,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:56.111209",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 199.194400000124,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:57.401046",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 289.01970000015353,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:58.605238",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 203.85159999977986,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:38:59.903687",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 297.7378000000499,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:01.111896",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 207.38140000003114,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:02.712880",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 600.3568999999516,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:03.909384",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 196.18529999979728,
+    "response_size_bytes": 1188,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:05.204372",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 294.13320000003296,
+    "response_size_bytes": 395,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:06.415315",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 210.5476000001545,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:07.664245",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 248.22169999970356,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:08.877299",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 212.26260000003094,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:10.201445",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 323.78509999989546,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:11.405675",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 203.90749999978652,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:12.680720",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 274.60160000009637,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:13.907305",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 226.01839999970252,
+    "response_size_bytes": 1188,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:15.158956",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 251.2906000001749,
+    "response_size_bytes": 395,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:16.362554",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 203.10420000032536,
+    "response_size_bytes": 1223,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:17.630664",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 267.66799999995783,
+    "response_size_bytes": 378,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:18.841690",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 210.67989999983183,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:20.125842",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 283.5546000001159,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:21.336317",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 210.11360000011337,
+    "response_size_bytes": 1201,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:22.609071",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 272.26340000015625,
+    "response_size_bytes": 419,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:23.818706",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 209.2702999998437,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:25.095506",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 276.46269999968354,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:26.300456",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 204.0700000002289,
+    "response_size_bytes": 1287,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:27.573138",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 271.91820000007283,
+    "response_size_bytes": 449,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:29.119587",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 545.7157000000734,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:30.450930",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 330.7279999999082,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:31.754627",
+    "api_type": "REST",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 303.22079999996276,
+    "response_size_bytes": 1282,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:33.016398",
+    "api_type": "GraphQL",
+    "query_type": "simples",
+    "query_name": "get_user",
+    "response_time_ms": 260.96159999997326,
+    "response_size_bytes": 438,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:34.558962",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 541.8377999999393,
+    "response_size_bytes": 53591,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:36.346813",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 786.9829000001118,
+    "response_size_bytes": 2897,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:37.850700",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 503.1355999999505,
+    "response_size_bytes": 52776,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:39.393271",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 542.0027000000118,
+    "response_size_bytes": 3135,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:40.946413",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 552.3759000002428,
+    "response_size_bytes": 52776,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:42.703777",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 756.3981000002968,
+    "response_size_bytes": 3135,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:44.222678",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 518.3005999997476,
+    "response_size_bytes": 47778,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:45.691291",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 467.9886999997507,
+    "response_size_bytes": 2976,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:47.348272",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 656.649600000037,
+    "response_size_bytes": 47778,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:48.799184",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 450.4322000002503,
+    "response_size_bytes": 2976,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:50.338039",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 537.992900000063,
+    "response_size_bytes": 52741,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:51.845002",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 506.13350000003265,
+    "response_size_bytes": 2844,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:53.557812",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 712.4661999996533,
+    "response_size_bytes": 52776,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:54.980714",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 422.20799999995506,
+    "response_size_bytes": 3135,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:56.493097",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 511.55259999995906,
+    "response_size_bytes": 41410,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:57.883796",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 390.35699999976714,
+    "response_size_bytes": 2324,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:39:59.401158",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 516.9456000003265,
+    "response_size_bytes": 53591,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:00.945653",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 543.7878000002456,
+    "response_size_bytes": 2897,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:02.423227",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 477.2026000000551,
+    "response_size_bytes": 41410,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:03.825480",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 401.57719999979236,
+    "response_size_bytes": 2324,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:05.354880",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 528.954800000065,
+    "response_size_bytes": 47778,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:06.805256",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 449.41960000005565,
+    "response_size_bytes": 2976,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:08.296312",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 490.74259999997594,
+    "response_size_bytes": 47778,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:10.190021",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 892.9208999998082,
+    "response_size_bytes": 2976,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:11.688402",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 498.0358999996497,
+    "response_size_bytes": 47778,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:13.176581",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 487.7406999999039,
+    "response_size_bytes": 2976,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:14.709953",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 532.6357999997526,
+    "response_size_bytes": 41410,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:16.340808",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 630.4969000002529,
+    "response_size_bytes": 2324,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:17.844696",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 503.2916000000114,
+    "response_size_bytes": 52741,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:19.279657",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 434.6155000002909,
+    "response_size_bytes": 2844,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:20.837680",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 557.3491999998623,
+    "response_size_bytes": 47778,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:22.322909",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 484.41989999992074,
+    "response_size_bytes": 2976,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:23.982725",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 659.0625000003456,
+    "response_size_bytes": 52776,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:25.528149",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 544.602599999962,
+    "response_size_bytes": 3135,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:27.066258",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 537.6340999996501,
+    "response_size_bytes": 52776,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:28.516456",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 449.3958999996721,
+    "response_size_bytes": 3135,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:30.013670",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 496.5575000001081,
+    "response_size_bytes": 52741,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:31.670042",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 655.6027999999969,
+    "response_size_bytes": 2844,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:33.168248",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 497.58580000025177,
+    "response_size_bytes": 41410,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:34.548276",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 379.6039999997447,
+    "response_size_bytes": 2324,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:36.035500",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 486.8674999997893,
+    "response_size_bytes": 52741,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:37.527494",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 491.1815000000388,
+    "response_size_bytes": 2844,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:39.044738",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 516.5243999999802,
+    "response_size_bytes": 52741,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:40.474870",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 429.3840000000273,
+    "response_size_bytes": 2844,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:42.016925",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 541.7170999999144,
+    "response_size_bytes": 53591,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:43.561513",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 543.9768000001095,
+    "response_size_bytes": 2897,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:45.080074",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 517.7745000000868,
+    "response_size_bytes": 52776,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:46.581520",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 500.7064999999784,
+    "response_size_bytes": 3135,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:48.107702",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 525.1640999999836,
+    "response_size_bytes": 53591,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:49.641696",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 533.1728000001021,
+    "response_size_bytes": 2897,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:51.147725",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 505.41300000031697,
+    "response_size_bytes": 52776,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:52.595553",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 447.0589000002292,
+    "response_size_bytes": 3135,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:54.135173",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 538.9779000001909,
+    "response_size_bytes": 52776,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:55.632459",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 496.6733999999633,
+    "response_size_bytes": 3135,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:57.122865",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 489.65899999984686,
+    "response_size_bytes": 53591,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:40:58.679001",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 555.3123999998206,
+    "response_size_bytes": 2897,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:41:00.199725",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 520.0645999998414,
+    "response_size_bytes": 53591,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:41:01.958429",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 758.0150999997386,
+    "response_size_bytes": 2897,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:41:03.468105",
+    "api_type": "REST",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 508.8463000001866,
+    "response_size_bytes": 47778,
+    "success": true,
+    "error_msg": null
+  },
+  {
+    "timestamp": "2025-11-30T20:41:04.868915",
+    "api_type": "GraphQL",
+    "query_type": "relacionamentos",
+    "query_name": "get_user_with_repos",
+    "response_time_ms": 400.1238999999259,
+    "response_size_bytes": 2976,
+    "success": true,
+    "error_msg": null
+  }
+]

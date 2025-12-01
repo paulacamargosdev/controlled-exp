@@ -1,0 +1,69 @@
+======================================================================
+SUMÁRIO DO EXPERIMENTO: GraphQL vs REST
+======================================================================
+
+Data/Hora: 2025-11-30 20:41:05
+Total de medições: 240
+
+
+REST:
+----------------------------------------------------------------------
+
+  Simples:
+    Medições: 30
+    Tempo médio: 244.18 ms
+    Tempo min/max: 195.97 / 586.70 ms
+    Tamanho médio: 1246.87 bytes
+    Tamanho min/max: 1188 / 1287 bytes
+
+  Relacionamentos:
+    Medições: 30
+    Tempo médio: 532.71 ms
+    Tempo min/max: 477.20 / 712.47 ms
+    Tamanho médio: 50251.50 bytes
+    Tamanho min/max: 41410 / 53591 bytes
+
+  Filtros:
+    Medições: 30
+    Tempo médio: 726.71 ms
+    Tempo min/max: 540.91 / 2023.70 ms
+    Tamanho médio: 55825.77 bytes
+    Tamanho min/max: 51652 / 58013 bytes
+
+  Paginacao:
+    Medições: 30
+    Tempo médio: 289.91 ms
+    Tempo min/max: 197.00 / 532.41 ms
+    Tamanho médio: 34868.37 bytes
+    Tamanho min/max: 2 / 51682 bytes
+
+GraphQL:
+----------------------------------------------------------------------
+
+  Simples:
+    Medições: 30
+    Tempo médio: 291.56 ms
+    Tempo min/max: 246.13 / 600.36 ms
+    Tamanho médio: 414.10 bytes
+    Tamanho min/max: 378 / 449 bytes
+
+  Relacionamentos:
+    Medições: 30
+    Tempo médio: 527.74 ms
+    Tempo min/max: 379.60 / 892.92 ms
+    Tamanho médio: 2893.67 bytes
+    Tamanho min/max: 2324 / 3135 bytes
+
+  Filtros:
+    Medições: 30
+    Tempo médio: 767.58 ms
+    Tempo min/max: 606.64 / 1318.18 ms
+    Tamanho médio: 3635.23 bytes
+    Tamanho min/max: 3226 / 4396 bytes
+
+  Paginacao:
+    Medições: 30
+    Tempo médio: 496.03 ms
+    Tempo min/max: 357.78 / 864.14 ms
+    Tamanho médio: 2813.63 bytes
+    Tamanho min/max: 2290 / 3027 bytes
