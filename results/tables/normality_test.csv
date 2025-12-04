@@ -1,0 +1,17 @@
+api_type,query_type,metric,statistic,p_value,is_normal
+REST,paginacao,response_time_ms,0.8510044091361739,0.0006508391370523346,False
+REST,paginacao,response_size_bytes,0.6777607248846779,7.523978172701707e-07,False
+REST,filtros,response_time_ms,0.4328043085579437,1.117717635605768e-09,False
+REST,filtros,response_size_bytes,0.8840013269904401,0.0034880584690218978,False
+REST,simples,response_time_ms,0.4854522001765387,3.773503773029167e-09,False
+REST,simples,response_size_bytes,0.7828296300661692,3.239458406183844e-05,False
+REST,relacionamentos,response_time_ms,0.7245594444615066,3.626477702956265e-06,False
+REST,relacionamentos,response_size_bytes,0.7244622794044011,3.6140915908380625e-06,False
+GraphQL,paginacao,response_time_ms,0.8402701047172371,0.00039048153008366043,False
+GraphQL,paginacao,response_size_bytes,0.7152043829439725,2.616931802349481e-06,False
+GraphQL,filtros,response_time_ms,0.7789958076082071,2.7789332938512593e-05,False
+GraphQL,filtros,response_size_bytes,0.7673109405236197,1.756561312931208e-05,False
+GraphQL,simples,response_time_ms,0.5629367431866816,2.6520467641563585e-08,False
+GraphQL,simples,response_size_bytes,0.7836779269643032,3.351908162055448e-05,False
+GraphQL,relacionamentos,response_time_ms,0.8536837878999162,0.0007412499641614151,False
+GraphQL,relacionamentos,response_size_bytes,0.7586124144566171,1.2585834687203179e-05,False

@@ -1,0 +1,47 @@
+======================================================================
+RELATÓRIO DE ANÁLISE ESTATÍSTICA
+Experimento: GraphQL vs REST
+======================================================================
+
+Data da Análise: 2025-12-04 12:33:19
+Arquivo de Dados: results/experiment_20251130_204105.csv
+Total de Medições Analisadas: 240
+
+======================================================================
+RQ1: TEMPO DE RESPOSTA
+======================================================================
+
+REST - Tempo médio: 448.38 ms
+GraphQL - Tempo médio: 520.73 ms
+Diferença: -72.35 ms
+Mann-Whitney U p-value: 0.9977
+Cohen's d: 0.3248
+
+CONCLUSÃO: Não há diferença estatisticamente significativa no tempo
+de resposta entre GraphQL e REST (p >= 0.05). H0 não pode ser rejeitada.
+
+======================================================================
+RQ2: TAMANHO DA RESPOSTA
+======================================================================
+
+REST - Tamanho médio: 35548.12 bytes
+GraphQL - Tamanho médio: 2439.16 bytes
+Diferença: 33108.97 bytes
+Redução percentual: 93.14%
+Mann-Whitney U p-value: 0.0000
+Cohen's d: -1.9492
+
+CONCLUSÃO: GraphQL apresenta tamanho de resposta significativamente
+menor que REST (p < 0.05). A hipótese alternativa H2 é aceita.
+
+======================================================================
+Arquivos gerados:
+  - descriptive_statistics.csv
+  - normality_test.csv
+  - levene_test.csv
+  - rq1_analysis.csv
+  - rq2_analysis.csv
+  - anova_time.csv
+  - anova_size.csv
+  - visualizations/ (diretório com gráficos)
+======================================================================

@@ -1,0 +1,11 @@
+,,response_time_ms,response_time_ms,response_time_ms,response_time_ms,response_time_ms,response_time_ms,response_size_bytes,response_size_bytes,response_size_bytes,response_size_bytes,response_size_bytes
+,,count,mean,std,min,median,max,mean,std,min,median,max
+api_type,query_type,,,,,,,,,,,
+GraphQL,filtros,30,767.58,133.18,606.64,740.74,1318.18,3635.23,415.37,3226,3524.0,4396
+GraphQL,paginacao,30,496.03,104.1,357.78,464.24,864.14,2813.63,223.65,2290,2865.5,3027
+GraphQL,relacionamentos,30,527.74,127.63,379.6,493.93,892.92,2893.67,250.78,2324,2936.5,3135
+GraphQL,simples,30,291.56,71.97,246.13,271.9,600.36,414.1,28.61,378,428.5,449
+REST,filtros,30,726.71,255.59,540.91,667.95,2023.7,55825.77,1763.59,51652,55639.0,58013
+REST,paginacao,30,289.91,65.82,197.0,292.71,532.41,34868.37,21782.14,2,46555.0,51682
+REST,relacionamentos,30,532.71,53.21,477.2,518.04,712.47,50251.5,4170.51,41410,52741.0,53591
+REST,simples,30,244.18,100.51,195.97,209.0,586.7,1246.87,38.43,1188,1252.5,1287

@@ -181,17 +181,6 @@ Cada medição contém:
 }
 ```
 
-## Ameaças à Validade
-
-### Mitigações Implementadas
-
-1. **Variabilidade de rede:** 30 repetições + randomização
-2. **Rate limiting:** Intervalo de 1s entre requisições
-3. **Cache:** Alternância de consultas e variação de parâmetros
-4. **Carga do servidor:** Randomização da ordem de execução
-
-Consulte `desenho_experimento.md` para análise completa de ameaças.
-
 ## Tecnologias Utilizadas
 
 - **Python 3.9+**

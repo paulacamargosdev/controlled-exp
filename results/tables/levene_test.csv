@@ -1,0 +1,9 @@
+query_type,metric,statistic,p_value,is_homogeneous
+paginacao,response_time_ms,2.546992852320524,0.11593933737789462,True
+paginacao,response_size_bytes,18.7516832620214,5.972083133960699e-05,False
+filtros,response_time_ms,0.17838001058185632,0.6743307544728409,True
+filtros,response_size_bytes,32.07988990287495,4.847373770061285e-07,False
+simples,response_time_ms,0.12239251009767846,0.727721169953645,True
+simples,response_size_bytes,6.188520014603182,0.01575443259124751,False
+relacionamentos,response_time_ms,8.677342919420985,0.004631752661081656,False
+relacionamentos,response_size_bytes,13.958412950759337,0.0004288714659262825,False
