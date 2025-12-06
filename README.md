@@ -188,6 +188,9 @@ Cada medição contém:
 Este dashboard apresenta os resultados do experimento controlado comparando as APIs **GraphQL** e **REST** da GitHub, com foco em duas métricas principais: **tempo de resposta** (RQ1) e **tamanho do payload** (RQ2).
 
 ---
+
+🔗 [Acessar Dashboard no Power BI](https://app.powerbi.com/groups/me/reports/561994c6-4e70-4e75-9198-237e00e56bc6/dcf38ea6cbc2a1c3d836?experience=power-bi)
+
 ### KPIs Principais (Cartões Superiores)
 
 #### 1. Total de Requisições: **240**
