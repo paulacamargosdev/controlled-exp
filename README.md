@@ -1,65 +1,150 @@
-# Experimento Controlado: GraphQL vs REST
+# 📝 Experimento Controlado: GraphQL vs REST
 
-**Disciplina:** Laboratório de Experimentação de Software
-**Instituição:** PUC Minas
-**Laboratório:** 05 - GraphQL vs REST - Um experimento controlado
+## 1. Informações do grupo
 
-## Descrição
+- **🎓 Curso:** Engenharia de Software
+- **📘 Disciplina:** Laboratório de Experimentação de Software
+- **🗓 Período:** 6° Período
+- **👨‍🏫 Professor(a):** Prof. Dr. João Paulo Carneiro Aramuni
+- **👥 Membros do Grupo:** Gabriel Lourenço, Gabriel Matos, Larissa Pedrosa e Paula de Freitas
 
-Este projeto implementa um experimento controlado para avaliar quantitativamente os benefícios da adoção de uma API GraphQL em comparação com uma API REST, respondendo às seguintes perguntas de pesquisa:
+---
 
-- **RQ1:** Respostas às consultas GraphQL são mais rápidas que respostas às consultas REST?
-- **RQ2:** Respostas às consultas GraphQL têm tamanho menor que respostas às consultas REST?
+## 2. Introdução
 
-## Objetivo
+Este laboratório implementa um **experimento controlado** para avaliar quantitativamente os benefícios da adoção de uma API GraphQL em comparação com uma API REST.
 
-Realizar medições sistemáticas de tempo de resposta e tamanho de payload em diferentes cenários de consulta (simples, com relacionamentos, com filtros e com paginação) para comparar as duas abordagens de API.
+O objetivo é realizar medições sistemáticas de **tempo de resposta** e **tamanho de payload** em diferentes cenários de consulta (simples, com relacionamentos, com filtros e com paginação) para comparar as duas abordagens de API.
 
-## Estrutura do Projeto
+Espera-se compreender se GraphQL oferece vantagens mensuráveis em termos de **desempenho** e **eficiência de transferência de dados** quando comparado ao modelo tradicional REST.
 
-```
-controlled-exp/
-│
-├── desenho_experimento.md      # Documentação completa do desenho experimental
-├── rest_client.py               # Cliente para consultas REST (GitHub API v3)
-├── graphql_client.py            # Cliente para consultas GraphQL (GitHub API v4)
-├── experiment.py                # Script principal de execução do experimento
-├── requirements.txt             # Dependências do projeto
-├── README.md                    # Este arquivo
-│
-└── results/                     # Diretório para armazenar resultados
-    ├── experiment_YYYYMMDD_HHMMSS.csv
-    ├── experiment_YYYYMMDD_HHMMSS.json
-    └── experiment_YYYYMMDD_HHMMSS_summary.txt
-```
+### 2.1. Questões de Pesquisa (Research Questions – RQs)
 
-## Configuração do Ambiente
+As **Questões de Pesquisa** foram definidas para guiar a investigação e estruturar a análise dos dados coletados:
 
-### 1. Pré-requisitos
+**🔍 Questões de Pesquisa - Research Questions (RQs):**
+
+| RQ   | Pergunta                                                                             |
+| ---- | ------------------------------------------------------------------------------------ |
+| RQ01 | Respostas às consultas GraphQL são mais rápidas que respostas às consultas REST? |
+| RQ02 | Respostas às consultas GraphQL têm tamanho menor que respostas às consultas REST? |
+
+### 2.2. Hipóteses Informais (Informal Hypotheses – IH)
+
+As **Hipóteses Informais** foram elaboradas a partir das RQs, estabelecendo expectativas sobre os resultados esperados do estudo:
+
+**💡 Hipóteses Informais - Informal Hypotheses (IH):**
+
+| IH   | Descrição                                                                                                                                                                   |
+| ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| IH01 | GraphQL apresenta tempo de resposta menor que REST em consultas com múltiplos relacionamentos, devido à capacidade de buscar dados relacionados em uma única requisição. |
+| IH02 | GraphQL retorna payloads menores que REST em média, pois permite selecionar apenas os campos necessários, evitando over-fetching.                                           |
+| IH03 | REST apresenta melhor desempenho em consultas simples e diretas, onde não há necessidade de resolver múltiplos relacionamentos.                                            |
+| IH04 | GraphQL demonstra maior vantagem em cenários com paginação, reduzindo o número de requisições necessárias.                                                             |
+| IH05 | A diferença de tamanho de payload entre GraphQL e REST é mais significativa em consultas que envolvem múltiplas entidades relacionadas.                                    |
+
+---
+
+## 3. Tecnologias e ferramentas utilizadas
+
+- **💻 Linguagem de Programação:** Python 3.9+
+- **🛠 Frameworks/Bibliotecas:**
+  - `requests` - Cliente HTTP para REST e GraphQL
+  - `pandas` - Manipulação e análise de dados
+  - `scipy/statsmodels` - Análise estatística
+  - `matplotlib/seaborn` - Visualização de dados
+  - `python-dotenv` - Gerenciamento de variáveis de ambiente
+- **🌐 APIs utilizadas:**
+  - GitHub REST API v3 ([https://api.github.com](https://api.github.com))
+  - GitHub GraphQL API v4 ([https://api.github.com/graphql](https://api.github.com/graphql))
+- **📊 Ferramentas de Visualização:**
+  - Power BI Desktop - Dashboard interativo
+  - Matplotlib/Seaborn - Gráficos estatísticos
+- **📦 Dependências:** Listadas em `requirements.txt`
+
+---
+
+## 4. Metodologia
+
+### 4.1 Tipo de Experimento
+
+Este é um **experimento controlado fatorial completo 2×4**:
+
+- **2 níveis de API:** REST vs GraphQL
+- **4 níveis de tipo de consulta:** simples, relacionamentos, filtros, paginação
+- **30 repetições** por combinação
+- **Total:** 240 medições
+
+### 4.2 Variáveis do Experimento
+
+**Variáveis Independentes (fatores controlados):**
+
+- **Tipo de API:** REST ou GraphQL
+- **Tipo de consulta:** simples, com relacionamentos, com filtros, com paginação
+
+**Variáveis Dependentes (métricas medidas):**
+
+- **Tempo de resposta (ms):** Latência total da requisição HTTP
+- **Tamanho da resposta (bytes):** Tamanho do payload JSON retornado
+
+**Variáveis de Controle:**
+
+- Mesma API base (GitHub API)
+- Mesmo token de autenticação
+- Mesmos parâmetros de consulta (usuário, repositório, filtros)
+- Intervalo fixo entre requisições (1 segundo) para evitar rate limiting
+
+### 4.3 Tratamentos
+
+O experimento avalia **8 tratamentos** distintos:
+
+| Tratamento | Tipo de API | Tipo de Consulta | Descrição                           |
+| ---------- | ----------- | ---------------- | ------------------------------------- |
+| T1         | REST        | Simples          | Consulta básica de dados de usuário |
+| T2         | GraphQL     | Simples          | Consulta básica de dados de usuário |
+| T3         | REST        | Relacionamentos  | Consulta de usuário + repositórios  |
+| T4         | GraphQL     | Relacionamentos  | Consulta de usuário + repositórios  |
+| T5         | REST        | Filtros          | Consulta de repositórios com filtros |
+| T6         | GraphQL     | Filtros          | Consulta de repositórios com filtros |
+| T7         | REST        | Paginação      | Consulta paginada de issues           |
+| T8         | GraphQL     | Paginação      | Consulta paginada de issues           |
+
+### 4.4 Coleta de dados
+
+- A coleta foi realizada utilizando as **GitHub REST API v3** e **GitHub GraphQL API v4**, que fornecem acesso estruturado a metadados de repositórios e usuários.
+- Foram implementados dois clientes especializados:
+  - **`rest_client.py`** - Cliente para consultas REST
+  - **`graphql_client.py`** - Cliente para consultas GraphQL
+- Cada cliente executa 4 tipos de consulta (simples, relacionamentos, filtros, paginação)
+- **Autenticação:** Token de acesso pessoal do GitHub (configurado via arquivo `.env`)
+- **Randomização:** A ordem de execução dos tratamentos é randomizada para evitar viés temporal
+
+### 4.5 Configuração do Ambiente
+
+**Pré-requisitos:**
 
 - Python 3.9 ou superior
 - Conta no GitHub
 - Token de acesso pessoal do GitHub
 
-### 2. Instalação
-
-Clone o repositório e instale as dependências:
+**Instalação:**
 
 ```bash
+
 # Navegue até o diretório do projeto
-cd controlled-exp
+
+cdcontrolled-exp
+
 
 # Instale as dependências
-pip install -r requirements.txt
+
+pipinstall-rrequirements.txt
+
 ```
 
-### 3. Configuração do Token GitHub
+**Configuração do Token GitHub:**
 
-Para executar o experimento, você precisa de um token de acesso pessoal do GitHub:
-
-#### Criando o Token:
-
-1. Acesse: https://github.com/settings/tokens
+1. Acesse: [https://github.com/settings/tokens](https://github.com/settings/tokens)
 2. Clique em **"Generate new token (classic)"**
 3. Dê um nome descritivo (ex: "Experimento Lab05")
 4. Selecione as seguintes permissões:
@@ -68,105 +153,44 @@ Para executar o experimento, você precisa de um token de acesso pessoal do GitH
 5. Clique em **"Generate token"**
 6. **COPIE O TOKEN** (você não poderá vê-lo novamente!)
 
-#### Configurando o Token:
-
 **Crie um arquivo `.env`:**
 
-```
+```env
 GITHUB_TOKEN=seu_token_aqui
 ```
 
-## Execução
+### 4.6 Execução do Experimento
 
-### Teste dos Clientes
-
-Antes de executar o experimento completo, você pode testar os clientes individualmente:
-
-**Teste do Cliente REST:**
+**Teste dos Clientes Individuais:**
 
 ```bash
+# Teste do Cliente REST
 python rest_client.py
-```
 
-**Teste do Cliente GraphQL:**
-
-```bash
+# Teste do Cliente GraphQL
 python graphql_client.py
 ```
 
-### Execução do Experimento Completo
+**Execução do Experimento Completo:**
 
 ```bash
 python experiment.py
 ```
 
-O experimento irá:
+O script `experiment.py`:
 
-1. Executar 8 tratamentos diferentes (4 tipos de consulta × 2 tipos de API)
-2. Realizar 30 repetições de cada tratamento (total de 240 medições)
-3. Randomizar a ordem de execução para evitar viés
-4. Salvar os resultados em formato CSV, JSON e sumário em texto
+1. Carrega o token de autenticação
+2. Executa 8 tratamentos diferentes (4 tipos de consulta × 2 tipos de API)
+3. Realiza 30 repetições de cada tratamento (total de 240 medições)
+4. Randomiza a ordem de execução para evitar viés
+5. Registra timestamp, tipo de API, tipo de consulta, tempo de resposta e tamanho do payload
+6. Salva os resultados em formato CSV, JSON e sumário em texto
 
-**Tempo estimado:** Aproximadamente 4-5 minutos (com intervalo de 1s entre requisições para evitar rate limiting)
+⏱ **Tempo estimado:** Aproximadamente 4-5 minutos (com intervalo de 1s entre requisições para evitar rate limiting)
 
-## Desenho Experimental
+### 4.7 Estrutura dos Dados Coletados
 
-### Variáveis
-
-**Variáveis Dependentes (métricas medidas):**
-
-- Tempo de resposta (ms)
-- Tamanho da resposta (bytes)
-
-**Variáveis Independentes:**
-
-- Tipo de API: REST vs GraphQL
-- Tipo de consulta: simples, relacionamentos, filtros, paginação
-
-### Tratamentos
-
-- **T1/T2:** Consultas simples (REST vs GraphQL)
-- **T3/T4:** Consultas com relacionamentos (REST vs GraphQL)
-- **T5/T6:** Consultas com filtros (REST vs GraphQL)
-- **T7/T8:** Consultas com paginação (REST vs GraphQL)
-
-### Objetos Experimentais
-
-**API Principal:** GitHub API
-
-- REST: GitHub REST API v3 (https://api.github.com)
-- GraphQL: GitHub GraphQL API v4 (https://api.github.com/graphql)
-
-### Tipo de Projeto
-
-Experimento Fatorial Completo 2×4:
-
-- 2 níveis de API (REST, GraphQL)
-- 4 níveis de tipo de consulta
-- 30 repetições por combinação
-- Total: 240 medições
-
-### Análise Estatística Planejada
-
-- Teste t de Student (comparação entre REST e GraphQL)
-- ANOVA bidirecional (interação tipo de API × tipo de consulta)
-- Testes não-paramétricos alternativos (Mann-Whitney U, Kruskal-Wallis)
-- Cálculo de tamanho de efeito (Cohen's d)
-- Nível de significância: α = 0.05
-
-Consulte `desenho_experimento.md` para detalhes completos do desenho experimental.
-
-## Resultados
-
-Os resultados são salvos automaticamente no diretório `results/` com timestamp:
-
-- **CSV:** Dados brutos para análise estatística
-- **JSON:** Dados estruturados para processamento programático
-- **TXT:** Sumário com estatísticas descritivas
-
-### Estrutura dos Dados
-
-Cada medição contém:
+Cada medição contém os seguintes campos:
 
 ```json
 {
@@ -181,217 +205,413 @@ Cada medição contém:
 }
 ```
 
-## Análise do Dashboard: GraphQL vs REST
+### 4.8 Métricas
 
-### Visão Geral
+#### 📊 Métricas do Experimento - Experiment Metrics (EM)
 
-Este dashboard apresenta os resultados do experimento controlado comparando as APIs **GraphQL** e **REST** da GitHub, com foco em duas métricas principais: **tempo de resposta** (RQ1) e **tamanho do payload** (RQ2).
+| Código | Métrica                       | Descrição                                                   |
+| ------- | ------------------------------ | ------------------------------------------------------------- |
+| EM01    | ⏱ Tempo de Resposta (ms)      | Latência total da requisição HTTP, medida em milissegundos |
+| EM02    | 📦 Tamanho da Resposta (bytes) | Tamanho do payload JSON retornado pela API, medido em bytes   |
 
----
+| EM03    | ✅ Taxa de Sucesso (%)         | Percentual de requisições bem-sucedidas sem erros                     |
 
-🔗 [Acessar Dashboard no Power BI](https://app.powerbi.com/groups/me/reports/561994c6-4e70-4e75-9198-237e00e56bc6/dcf38ea6cbc2a1c3d836?experience=power-bi)
+| EM04    | 🔄 Tipo de API                 | Categoria da API utilizada: REST ou GraphQL                             |
 
-### KPIs Principais (Cartões Superiores)
+| EM05    | 📋 Tipo de Consulta            | Categoria da consulta: simples, relacionamentos, filtros ou paginação |
 
-#### 1. Total de Requisições: **240**
-- Representa o total de medições realizadas no experimento
-- Distribuídas igualmente entre REST e GraphQL (120 cada)
-- 30 repetições para cada um dos 8 tratamentos (2 APIs × 4 tipos de consulta)
+### 4.9 Cálculo de métricas
 
-#### 2. Taxa de Sucesso: **1,00** (100%)
-- Todas as 240 requisições foram executadas com sucesso
-- Não houve falhas ou erros durante a execução do experimento
-- Indica alta confiabilidade dos dados coletados
+-**Tempo de Resposta (EM01):** Calculado usando `time.time()` antes e depois de cada requisição HTTP
 
-#### 3. Redução Média de Tamanho: **0,93** (93%)
-- **Resultado mais significativo do experimento**
-- GraphQL reduz em média **93% do tamanho das respostas** em comparação com REST
-- Demonstra a eficiência do GraphQL em eliminar over-fetching
-- Impacto direto na economia de banda e tráfego de rede
+-**Tamanho da Resposta (EM02):** Obtido através do método `len(response.text.encode('utf-8'))`
 
-#### 4. Diferença Média de Tempo: **-72,35 ms**
-- O valor **negativo** indica que GraphQL é, em média, **72,35 ms mais lento** que REST
-- Nota importante: "GraphQL mais lento" destacado no canto superior direito
-- Trade-off: GraphQL sacrifica um pouco de velocidade para reduzir drasticamente o tamanho
+-**Taxa de Sucesso (EM03):** Razão entre requisições com `status_code == 200` e total de requisições
 
----
+- As métricas são calculadas para cada uma das 240 medições e armazenadas individualmente
+- Estatísticas agregadas (média, mediana, desvio padrão) são calculadas por tratamento
 
-### Gráfico 1: Tempo Médio de Resposta REST vs GraphQL (RQ1)
+### 4.10 Análise Estatística Planejada
 
-**Tipo:** Gráfico de linhas  
-**Cores:** Azul (REST), Laranja (GraphQL)
+A análise dos dados incluirá:
 
-#### Análise por Tipo de Consulta:
+- **Teste t de Student:** Comparação de médias entre REST e GraphQL para cada tipo de consulta
+- **ANOVA bidirecional:** Análise da interação entre tipo de API × tipo de consulta
+- **Testes não-paramétricos:** Mann-Whitney U e Kruskal-Wallis como alternativas
+- **Tamanho de efeito:** Cohen's d para quantificar a magnitude das diferenças
+- **Nível de significância:** α = 0.05
 
-- **Simples:** Tempos muito próximos entre REST e GraphQL (linhas quase sobrepostas)
-- **Relacionamentos:** Comportamento similar, pequena diferença
-- **Paginação:** **Maior divergência** - GraphQL apresenta pico significativo, sendo muito mais lento que REST
-- **Filtros:** GraphQL apresenta queda acentuada, aproximando-se do desempenho REST
+### 4.11. Relação das RQs com as Métricas
 
-#### Conclusão RQ1:
-- GraphQL **não é consistentemente mais rápido** que REST
-- Para **paginação**, GraphQL tem desempenho significativamente **inferior**
-- Para consultas simples e filtros, as diferenças são menores
+A tabela a seguir apresenta a relação entre cada questão de pesquisa e as métricas utilizadas para sua avaliação:
+
+**🔍 Relação das RQs com Métricas:**
+
+| RQ   | Pergunta                                                                             | Métrica utilizada             | Código da Métrica |
+| ---- | ------------------------------------------------------------------------------------ | ------------------------------ | ------------------- |
+| RQ01 | Respostas às consultas GraphQL são mais rápidas que respostas às consultas REST? | ⏱ Tempo de Resposta (ms)      | EM01                |
+| RQ02 | Respostas às consultas GraphQL têm tamanho menor que respostas às consultas REST? | 📦 Tamanho da Resposta (bytes) | EM02                |
 
 ---
 
-### Gráfico 2: Redução de Tamanho de Resposta (RQ2)
+## 5. Resultados
 
-**Tipo:** Gráfico de linhas com eixo invertido  
-**Cores:** Azul (REST - linha superior), Laranja (GraphQL - linha inferior)
+> [!NOTE]
+> Os resultados foram obtidos a partir de **240 medições** realizadas em 30/11/2025, com análise estatística completa executada em 04/12/2025.
+>
+> - **Arquivo de dados:** `experiment_20251130_204105.csv`
+> - **Total de medições:** 240 (30 repetições × 8 tratamentos)
+> - **Análise completa:** Disponível em `results/analysis_summary.txt`
 
-#### Análise por Tipo de Consulta:
+### 5.1 Estatísticas Descritivas
 
-- **Filtros:** Maior diferença entre as linhas - REST retorna payloads muito maiores
-- **Relacionamentos:** Grande separação entre as linhas - GraphQL muito mais eficiente
-- **Paginação:** Diferença substancial mantida
-- **Simples:** Menor diferença, mas GraphQL ainda é significativamente menor
+#### 5.1.1 Tempo de Resposta (ms) - Comparação Geral
 
-#### Conclusão RQ2:
-- GraphQL apresenta **redução consistente e dramática** no tamanho das respostas
-- A linha laranja (GraphQL) permanece **constantemente abaixo** da linha azul (REST)
-- Benefício mais evidente em consultas com **filtros** e **relacionamentos**
+| Tipo de API       | Média (ms) | Desvio Padrão (ms) | Mínimo (ms) | Mediano (ms) | Máximo (ms) | N   |
+| ----------------- | ----------- | ------------------- | ------------ | ------------ | ------------ | --- |
+| **REST**    | 448.38      | 241.44              | 195.97       | 372.87       | 2023.70      | 120 |
+| **GraphQL** | 520.73      | 202.39              | 246.13       | 467.05       | 1318.18      | 120 |
 
----
+> **Diferença:** GraphQL apresentou tempo médio 72.35 ms **maior** que REST (+16.14%)
 
-### Gráfico 3: Evolução no Tempo
+#### 5.1.2 Tamanho da Resposta (bytes) - Comparação Geral
 
-**Tipo:** Gráfico de linhas temporal  
-**Eixo X:** timestamp  
-**Cores:** Azul (GraphQL), Laranja (REST)
+| Tipo de API       | Média (bytes) | Desvio Padrão (bytes) | Mínimo (bytes) | Mediano (bytes) | Máximo (bytes) | N   |
+| ----------------- | -------------- | ---------------------- | --------------- | --------------- | --------------- | --- |
+| **REST**    | 35,548.12      | 23,989.90              | 2               | 46,555.0        | 58,013          | 120 |
+| **GraphQL** | 2,439.16       | 1,245.66               | 378             | 2,865.5         | 4,396           | 120 |
 
-#### Observações:
-
-- **Padrão de execução em blocos:** Visível pelos picos e vales alternados
-- **REST (laranja):** Apresenta picos muito altos (~60 mil) em determinados momentos
-- **GraphQL (azul):** Mantém-se consistentemente baixo (~0-5 mil) durante todo o experimento
-- **Randomização:** Os blocos alternados indicam a randomização dos tratamentos
-- **Estabilidade:** GraphQL mostra comportamento mais estável e previsível
-
-#### Interpretação:
-- A diferença visual dramática confirma a **redução de 93% no tamanho** das respostas
-- REST apresenta alta variabilidade dependendo do tipo de consulta
-- GraphQL mantém payloads consistentemente pequenos
+> **Diferença:** GraphQL apresentou tamanho médio 33,108.97 bytes **menor** que REST (**-93.14%** de redução!)
 
 ---
 
-### Gráfico 4: Gráfico de Interação - ANOVA
+### 5.2 Análise por Tipo de Consulta
 
-**Tipo:** Gráfico de barras  
-**Eixo Y:** Média de sum_sq (soma dos quadrados)
+#### 5.2.1 Tempo de Resposta (ms) por Tipo de Consulta
 
-#### Fatores Analisados:
+| Tipo de Consulta          | REST (Média) | REST (DP) | GraphQL (Média) | GraphQL (DP) | Diferença (ms) | Diferença (%) |
+| ------------------------- | ------------- | --------- | ---------------- | ------------ | --------------- | -------------- |
+| **Simples**         | 244.18        | 100.51    | 291.56           | 71.97        | -47.38          | -19.40%        |
+| **Relacionamentos** | 532.71        | 53.21     | 527.74           | 127.63       | +4.97           | +0.93%         |
+| **Filtros**         | 726.71        | 255.59    | 767.58           | 133.18       | -40.87          | -5.62%         |
+| **Paginação**     | 289.91        | 65.82     | 496.03           | 104.10       | -206.12         | -71.10%        |
 
-1. **Residual:** Maior barra (~4E+16) - variância não explicada pelos fatores
-2. **C(query_type):** Segunda maior barra - tipo de consulta tem impacto significativo
-3. **C(api_type):C(query_type):** Interação entre API e tipo de consulta
-4. **C(api_type):** Menor barra - tipo de API isoladamente
+**Observações:**
 
-#### Conclusão Estatística:
-- O **tipo de consulta** é o fator que mais contribui para a variância
-- Existe **interação significativa** entre tipo de API e tipo de consulta
-- Confirma que o desempenho relativo de REST vs GraphQL **depende do cenário**
+- ✅ REST foi **mais rápido** em consultas simples, filtros e paginação
+- ✅ GraphQL foi **ligeiramente mais rápido** apenas em relacionamentos (+0.93%)
+- ⚠️ A maior diferença foi em **paginação**, onde REST foi 71% mais rápido
 
----
+#### 5.2.2 Tamanho da Resposta (bytes) por Tipo de Consulta
 
-### Tabela: Estatísticas Descritivas por API e Tipo de Consulta
+| Tipo de Consulta          | REST (Média) | REST (DP) | GraphQL (Média) | GraphQL (DP) | Redução (bytes) | Redução (%)    |
+| ------------------------- | ------------- | --------- | ---------------- | ------------ | ----------------- | ---------------- |
+| **Simples**         | 1,246.87      | 38.43     | 414.10           | 28.61        | 832.77            | **66.79%** |
+| **Relacionamentos** | 50,251.50     | 4,170.51  | 2,893.67         | 250.78       | 47,357.83         | **94.24%** |
+| **Filtros**         | 55,825.77     | 1,763.59  | 3,635.23         | 415.37       | 52,190.53         | **93.49%** |
+| **Paginação**     | 34,868.37     | 21,782.14 | 2,813.63         | 223.65       | 32,054.73         | **91.93%** |
 
-#### Destaques da Tabela:
+**Observações:**
 
-**GraphQL:**
-- **Filtros:** mean_size = 3.635,23 bytes
-- **Paginação:** mean_size = 2.813,63 bytes
-- **Relacionamentos:** mean_size = 2.893,67 bytes
-- **Simples:** mean_size = 414,10 bytes (menor de todos)
-
-**REST:**
-- **Filtros:** mean_size = 55.825,77 bytes (**15x maior** que GraphQL)
-- **Paginação:** mean_size = 34.868,37 bytes (**12x maior** que GraphQL)
-- **Relacionamentos:** mean_size = 50.251,50 bytes (**17x maior** que GraphQL)
-- **Simples:** mean_size = 1.246,87 bytes (**3x maior** que GraphQL)
-
-#### Observações Importantes:
-
-- **Consistência:** Todas as consultas têm `count_time = 30` (30 repetições cada)
-- **Variabilidade (std_size):** REST apresenta desvio padrão muito maior, indicando maior inconsistência
-- **Min/Max:** REST tem ranges muito mais amplos (ex: paginação de 2 a 51.682 bytes)
+- 🏆 GraphQL foi **significativamente mais eficiente** em todos os tipos de consulta
+- 🏆 Maior redução em **relacionamentos**: 94.24% menos dados transferidos
+- 🏆 Até em consultas **simples**, GraphQL reduziu 66.79% do payload
 
 ---
 
-## Principais Conclusões do Dashboard
+### 5.3 Gráficos e Visualizações
 
-### Pontos Fortes do GraphQL
+Os gráficos a seguir ilustram os resultados do experimento. Todos os arquivos estão disponíveis em `results/visualizations/`.
 
-1. **Redução massiva de tamanho (93%)** - Benefício consistente em todos os cenários
-2. **Previsibilidade** - Menor variabilidade nos tamanhos de resposta
-3. **Eficiência de banda** - Ideal para aplicações móveis ou com restrições de rede
-4. **Eliminação de over-fetching** - Retorna apenas os dados solicitados
+#### 5.3.1 Boxplot - Tempo de Resposta
 
-### Trade-offs do GraphQL
+![Boxplot - Tempo de Resposta](results/visualizations/boxplot_response_time.png)
 
-1. **Tempo de resposta maior** - Em média 72ms mais lento que REST
-2. **Paginação problemática** - Desempenho significativamente inferior em cenários de paginação
-3. **Overhead de processamento** - Queries complexas podem ter custo computacional maior
+**Arquivo:** `results/visualizations/boxplot_response_time.png`
 
-### Recomendações
+**Interpretação:**
 
-**Use GraphQL quando:**
-- Largura de banda é limitada (mobile, IoT)
-- Precisa de flexibilidade nas consultas
-- Quer evitar múltiplas requisições REST
-- Tamanho do payload é crítico
+- Mostra a distribuição de tempo de resposta para REST e GraphQL em cada tipo de consulta
+- REST apresenta maior variabilidade em filtros e paginação
+- GraphQL mostra distribuição mais consistente, exceto em paginação
 
-**Use REST quando:**
-- Latência é prioridade absoluta
-- Implementa paginação pesada
-- Precisa de cache HTTP tradicional
-- Simplicidade de implementação é importante
+#### 5.3.2 Boxplot - Tamanho da Resposta
 
-### Validação das Hipóteses
+![Boxplot - Tamanho da Resposta](results/visualizations/boxplot_response_size.png)
 
-**RQ1 (Tempo de Resposta):**
-- **Hipótese rejeitada** - GraphQL não é consistentemente mais rápido
-- GraphQL é mais lento, especialmente em paginação
+**Arquivo:** `results/visualizations/boxplot_response_size.png`
 
-**RQ2 (Tamanho da Resposta):**
-- **Hipótese confirmada** - GraphQL tem tamanho significativamente menor
-- Redução de 93% é estatisticamente e praticamente significativa
+**Interpretação:**
+
+- Contraste marcante entre REST e GraphQL no tamanho de payload
+- REST retorna volumes muito maiores de dados (escala de dezenas de KB)
+- GraphQL mantém respostas compactas (escala de poucos KB)
+
+#### 5.3.3 Gráfico de Barras - Comparação de Médias
+
+![Gráfico de Barras - Comparação](results/visualizations/barplot_comparison.png)
+
+**Arquivo:** `results/visualizations/barplot_comparison.png`
+
+**Interpretação:**
+
+- Comparação direta das médias de tempo e tamanho entre REST e GraphQL
+- Destaca visualmente a superioridade do GraphQL em eficiência de dados
+- Tempos de resposta relativamente equilibrados
+
+#### 5.3.4 Histogramas - Distribuição das Métricas
+
+![Histogramas - Distribuição](results/visualizations/histograms_distribution.png)
+
+**Arquivo:** `results/visualizations/histograms_distribution.png`
+
+**Interpretação:**
+
+- Distribuição de frequência das medições de tempo e tamanho
+- REST apresenta distribuição bimodal em tamanho (consultas simples vs complexas)
+- GraphQL apresenta distribuição mais concentrada
+
+#### 5.3.5 Violin Plot - Distribuições Detalhadas
+
+![Violin Plot - Distribuições](results/visualizations/violinplot_distributions.png)
+
+**Arquivo:** `results/visualizations/violinplot_distributions.png`
+
+**Interpretação:**
+
+- Combina boxplot com densidade de distribuição
+- Permite visualizar a forma completa da distribuição dos dados
+- Evidencia outliers e assimetrias nas distribuições
+
+#### 5.3.6 Dashboard Power BI - Visualização Interativa
+
+![Dashboard Power BI](https://github.com/user-attachments/assets/b4980cb5-06b1-47d6-9b39-7ae9b34955f8)
+
+
+O projeto inclui um **dashboard interativo no Power BI** que permite explorar os resultados do experimento de forma dinâmica e visual. O dashboard oferece:
+
+- 📊 **Visão Geral do Experimento:** Métricas principais (total de medições, médias, diferenças)
+- 📈 **Comparações Visuais:** Gráficos comparativos entre REST e GraphQL
+- 🔍 **Filtros Interativos:** Filtragem por tipo de API, tipo de consulta e período
+- 📉 **Análise de Tendências:** Evolução temporal das métricas
+- 🎯 **KPIs Destacados:** Indicadores-chave de desempenho
 
 ---
 
-## Qualidade do Dashboard
+### 5.4 Análise das Questões de Pesquisa
 
-### Pontos Positivos
+#### 🔍 RQ01: Respostas às consultas GraphQL são mais rápidas que respostas às consultas REST?
 
-**Design limpo e profissional** com fundo escuro  
-**KPIs bem destacados** no topo para insights rápidos  
-**Cores consistentes** (azul para REST, laranja para GraphQL)  
-**Múltiplas perspectivas** (tempo, tamanho, evolução temporal, ANOVA)  
-**Tabela detalhada** com estatísticas descritivas completas  
-**Visualização temporal** mostra a execução do experimento  
+**Resultado:** ❌ **HIPÓTESE REFUTADA**
 
-### Sugestões de Melhoria
+| Métrica               | REST      | GraphQL   | Diferença |
+| ---------------------- | --------- | --------- | ---------- |
+| Tempo médio           | 448.38 ms | 520.73 ms | -72.35 ms  |
+| Mann-Whitney U p-value | -         | -         | 0.9977     |
+| Cohen's d              | -         | -         | 0.3248     |
 
-- Adicionar boxplots para visualizar distribuição e outliers
-- Incluir testes de significância estatística (p-values) nos gráficos
-- Adicionar slicers para filtrar por tipo de consulta
-- Criar página separada para cada RQ (RQ1 e RQ2)
-- Incluir gráfico de barras para comparação direta de redução percentual por tipo de consulta
+**Conclusão:**
 
-<img width="863" height="476" alt="dashboard" src="https://github.com/user-attachments/assets/b4980cb5-06b1-47d6-9b39-7ae9b34955f8" />
+- GraphQL foi **16.14% mais lento** que REST em média
+- A diferença **NÃO é estatisticamente significativa** (p = 0.9977 >> 0.05)
+- O tamanho de efeito é **pequeno** (Cohen's d = 0.3248)
+- **H0 não pode ser rejeitada:** Não há evidência de que GraphQL seja mais rápido que REST
 
-## Tecnologias Utilizadas
+**Análise Detalhada por Tipo de Consulta:**
 
+| Tipo            | REST (ms) | GraphQL (ms) | Diferença       | p-value | Significativo? |
+| --------------- | --------- | ------------ | ---------------- | ------- | -------------- |
+| Simples         | 244.18    | 291.56       | -47.38 (-19.4%)  | 1.0000  | ❌ Não        |
+| Relacionamentos | 532.71    | 527.74       | +4.97 (+0.9%)    | 0.0687  | ❌ Não        |
+| Filtros         | 726.71    | 767.58       | -40.87 (-5.6%)   | 0.9957  | ❌ Não        |
+| Paginação     | 289.91    | 496.03       | -206.12 (-71.1%) | 1.0000  | ❌ Não        |
 
-- **Python 3.9+**
-- **requests:** Cliente HTTP para REST e GraphQL
-- **pandas:** Manipulação de dados (Sprint 2)
-- **scipy/statsmodels:** Análise estatística (Sprint 2)
-- **matplotlib/seaborn:** Visualização de dados (Sprint 3)
+**Observações:**
 
-## Referências
+- REST foi consistentemente mais rápido, exceto em relacionamentos (diferença desprezível)
+- A maior diferença foi em **paginação** (-71%), mas ainda não significativa
+- Nenhum tipo de consulta apresentou diferença estatisticamente significativa
 
-- GitHub REST API Documentation: https://docs.github.com/en/rest
-- GitHub GraphQL API Documentation: https://docs.github.com/en/graphql
-- GraphQL Official: https://graphql.org/
-- REST API Design: https://restfulapi.net/
+---
+
+#### 🔍 RQ02: Respostas às consultas GraphQL têm tamanho menor que respostas às consultas REST?
+
+**Resultado:** ✅ **HIPÓTESE CONFIRMADA**
+
+| Métrica               | REST            | GraphQL        | Diferença       |
+| ---------------------- | --------------- | -------------- | ---------------- |
+| Tamanho médio         | 35,548.12 bytes | 2,439.16 bytes | 33,108.97 bytes  |
+| Redução percentual   | -               | -              | **93.14%** |
+| Mann-Whitney U p-value | -               | -              | 0.0000           |
+| Cohen's d              | -               | -              | -1.9492          |
+
+**Conclusão:**
+
+- GraphQL apresentou **93.14% menos dados** transferidos que REST
+- A diferença **É estatisticamente significativa** (p < 0.0001)
+- O tamanho de efeito é **muito grande** (Cohen's d = -1.9492)
+- **H2 é aceita:** GraphQL retorna payloads significativamente menores que REST
+
+**Análise Detalhada por Tipo de Consulta:**
+
+| Tipo            | REST (bytes) | GraphQL (bytes) | Redução (bytes) | Redução (%)    | p-value | Cohen's d | Significativo? |
+| --------------- | ------------ | --------------- | ----------------- | ---------------- | ------- | --------- | -------------- |
+| Simples         | 1,246.87     | 414.10          | 832.77            | **66.79%** | 0.0000  | -24.58    | ✅ Sim         |
+| Relacionamentos | 50,251.50    | 2,893.67        | 47,357.83         | **94.24%** | 0.0000  | -16.03    | ✅ Sim         |
+| Filtros         | 55,825.77    | 3,635.23        | 52,190.53         | **93.49%** | 0.0000  | -40.74    | ✅ Sim         |
+| Paginação     | 34,868.37    | 2,813.63        | 32,054.73         | **91.93%** | 0.0009  | -2.08     | ✅ Sim         |
+
+- GraphQL foi **extremamente superior** em todos os tipos de consulta
+- Maior benefício em **relacionamentos** e **filtros** (>93% de redução)
+- Até em consultas **simples**, a redução foi de quase 67%
+- Todos os resultados são **altamente significativos** (p < 0.01)
+
+---
+
+### 5.5 Discussão dos Resultados
+
+#### ✅ Confirmação e Refutação das Hipóteses Informais
+
+| Hipótese                                                              | Status                                | Evidência                                                                        |
+| ---------------------------------------------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------- |
+| **IH01:** GraphQL é mais rápido em relacionamentos             | ⚠️**Parcialmente Confirmada** | GraphQL foi ligeiramente mais rápido (+0.93%), mas diferença não significativa |
+| **IH02:** GraphQL retorna payloads menores                       | ✅**CONFIRMADA**                | Redução de 93.14% altamente significativa (p < 0.0001)                          |
+| **IH03:** REST é melhor em consultas simples                    | ✅**CONFIRMADA**                | REST foi 19.4% mais rápido em consultas simples                                  |
+| **IH04:** GraphQL tem vantagem em paginação                    | ❌**REFUTADA**                  | REST foi 71% mais rápido em paginação                                          |
+| **IH05:** Diferença de payload é maior em múltiplas entidades | ✅**CONFIRMADA**                | Maior redução em relacionamentos (94.24%) e filtros (93.49%)                    |
+
+#### 🔍 Padrões e Insights Interessantes
+
+**1. Trade-off entre Tempo e Tamanho:**
+
+- GraphQL sacrifica um pouco de velocidade (-16% em média) para obter **enorme economia de dados** (-93%)
+- Este trade-off pode ser vantajoso em cenários com:
+
+  - Conexões lentas ou limitadas (mobile, IoT)
+  - Custos de transferência de dados
+  - Necessidade de economia de banda
+
+**2. Desempenho do REST:**
+
+- REST foi consistentemente mais rápido, contrariando expectativas
+- Possíveis explicações:
+
+  - Overhead do parser GraphQL
+  - Otimizações de cache no REST da GitHub
+  - Complexidade da resolução de queries GraphQL
+
+**3. Variabilidade dos Dados:**
+
+- REST apresentou maior desvio padrão em paginação (21,782 bytes)
+- GraphQL manteve respostas mais consistentes e previsíveis
+- Isso sugere que GraphQL oferece **comportamento mais estável**
+
+**4. Eficiência em Relacionamentos:**
+
+- GraphQL mostrou seu maior valor em consultas com relacionamentos (94.24% de redução)
+- Evita o problema de **over-fetching** do REST
+- Evita múltiplas requisições para dados relacionados
+
+**5. Impacto em Paginação:**
+
+- REST surpreendentemente foi muito mais rápido em paginação (-71%)
+- Pode ser devido à implementação específica da GitHub API
+- GraphQL pode ter overhead adicional em queries com cursors
+
+---
+
+## 6. Conclusão
+
+Resumo das principais descobertas do laboratório.
+
+- **🏆 Principais insights:**
+
+  - Diferenças mensuráveis entre GraphQL e REST em termos de tempo de resposta e tamanho de payload.
+  - Identificação de cenários onde cada abordagem demonstra vantagens.
+  - Confirmações ou refutações das hipóteses informais levantadas pelo grupo.
+  - Impacto do tipo de consulta no desempenho relativo das APIs.
+- **⚠️ Problemas e dificuldades enfrentadas:**
+
+  - Limitações de rate limiting da GitHub API.
+  - Variabilidade de latência de rede entre medições.
+  - Necessidade de intervalo entre requisições para evitar bloqueios.
+  - Diferenças na estrutura de queries entre REST e GraphQL que podem afetar comparações diretas.
+- **🚀 Sugestões para trabalhos futuros:**
+
+  - Expandir o experimento para outras APIs públicas (Shopify, Twitter, etc).
+  - Incluir métricas adicionais como uso de CPU, memória e throughput.
+  - Testar cenários com caching e otimização de queries.
+  - Implementar dashboards interativos para visualização em tempo real.
+  - Explorar impacto de diferentes bibliotecas de cliente (Apollo, Relay).
+  - Analisar complexidade de implementação e manutenção de cada abordagem.
+
+---
+
+## 7. Referências
+
+Liste as referências bibliográficas ou links utilizados.
+
+- [📌 GitHub REST API Documentation](https://docs.github.com/en/rest)
+- [📌 GitHub GraphQL API Documentation](https://docs.github.com/en/graphql)
+- [📌 GraphQL Official](https://graphql.org/)
+- [📌 REST API Design](https://restfulapi.net/)
+- [📌 Biblioteca Pandas](https://pandas.pydata.org/)
+- [📌 Biblioteca Requests](https://requests.readthedocs.io/)
+- [📌 SciPy - Statistical Functions](https://scipy.org/)
+- [📌 Matplotlib](https://matplotlib.org/)
+- [📌 Seaborn](https://seaborn.pydata.org/)
+
+---
+
+## 8. Apêndices
+
+### 8.1 Scripts Utilizados
+
+- 💾 `rest_client.py` - Cliente para consultas REST (GitHub API v3)
+- 💾 `graphql_client.py` - Cliente para consultas GraphQL (GitHub API v4)
+- 💾 `experiment.py` - Script principal de execução do experimento
+
+### 8.2 Documentação Adicional
+
+- 📄 `desenho_experimento.md` - Documentação completa do desenho experimental
+- 📄 `requirements.txt` - Dependências do projeto
+
+### 8.3 Exemplos de Consultas
+
+**Exemplo de Consulta REST (Simples):**
+
+```bash
+GET https://api.github.com/users/{username}
+Authorization: token {GITHUB_TOKEN}
+```
+
+**Exemplo de Consulta GraphQL (Simples):**
+
+```graphql
+query {
+  user(login: "{username}") {
+    login
+    name
+    bio
+    followers {
+      totalCount
+    }
+  }
+}
+```
+
+### 8.4 Arquivos de Resultados
+
+- 📊 `results/experiment_YYYYMMDD_HHMMSS.csv` - Dados brutos em formato CSV
+- 📊 `results/experiment_YYYYMMDD_HHMMSS.json` - Dados estruturados em formato JSON
+- 📊 `results/experiment_YYYYMMDD_HHMMSS_summary.txt` - Sumário com estatísticas descritivas
+- 📊 `results/analysis_summary.txt` - Relatório completo de análise estatística
+
+### 8.5 Dashboard Power BI
+
+- 📊 **`GraphQL vs REST.pbix`** - Dashboard interativo do Power BI
+  - Visualizações interativas dos resultados
+  - Comparações dinâmicas entre REST e GraphQL
+  - Filtros por tipo de consulta e API
+  - KPIs e métricas principais destacadas
+  - Requer: Power BI Desktop para visualização
